@@ -11,4 +11,10 @@ Day 4 - Parsing strings, using string methods, demo of split (to make lists)
 
 Day 5 - Usings lists, error checking inputs, testing individual parts of the expression, writing math interpreter from scratch
 
-Day 6 - Restructuring code (again), writing basic vending machine from scratch, field trip to downtown Colombia!
+Day 6 - Restructuring code (again), writing basic vending machine from scratch
+
+Day 7 - No class
+
+Day 8 - Learning about list methods, dictionaries (keys and values), for loops with both, wrote menu.py from scratch
+
+Day 9 - Opening files, reading files, 
