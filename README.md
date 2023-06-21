@@ -18,3 +18,5 @@ Day 7 - No class
 Day 8 - Learning about list methods, dictionaries (keys and values), for loops with both, wrote menu.py from scratch
 
 Day 9 - Opening files, reading files, exploring random (just randint today), writing the adding game program from scratch
+
+Day 10 - Nesting lists inside of lists (creating matrices), pulling data from nested lists, intro to object-oriented programming, writing gradebook challenge from scratch
