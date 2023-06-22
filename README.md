@@ -20,3 +20,5 @@ Day 8 - Learning about list methods, dictionaries (keys and values), for loops w
 Day 9 - Opening files, reading files, exploring random (just randint today), writing the adding game program from scratch
 
 Day 10 - Nesting lists inside of lists (creating matrices), pulling data from nested lists, intro to object-oriented programming, writing gradebook challenge from scratch
+
+Day 11 - Creating classes, getter and setter functions, making attributes private, writing student classes and generator from scratch
