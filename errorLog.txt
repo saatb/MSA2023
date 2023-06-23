@@ -1,0 +1,2 @@
+2023-06-23 11:15:57.994505: Error in data: Harry,Allen,Science,94,2.40181750, list index out of range
+2023-06-23 11:15:57.995464: Error in data: Owen,Bishop,Geology,94,2.93186391, list index out of range
