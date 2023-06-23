@@ -22,3 +22,5 @@ Day 9 - Opening files, reading files, exploring random (just randint today), wri
 Day 10 - Nesting lists inside of lists (creating matrices), pulling data from nested lists, intro to object-oriented programming, writing gradebook challenge from scratch
 
 Day 11 - Creating classes, getter and setter functions, making attributes private, writing student classes and generator from scratch
+
+Day 12 - Sorted everything into folders and stuff (manually deleted everything else because I don't know another way to do it), reading students.csv and creating an object for each student in that file, writing text to file, set up flask
