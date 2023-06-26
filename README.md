@@ -29,4 +29,4 @@ Day 13 - No class
 
 Day 14 - No class
 
-Day 15 - 
+Day 15 - Turning the list of student objects into a dictionary for each student, then turning the list of student dictionaries into a json and hosting it on a web server
