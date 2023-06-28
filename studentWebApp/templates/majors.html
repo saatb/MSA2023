@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{%  block content %}
+<h1>{% block title %} View Students by Major {% endblock %}</h1>
+<form method="post">
+    <label for="major">Choose Major:</label>
+    <select id="major" name="major">
+        <option value="">Select a Major</option>
+        {% for major in listOfMajors %}
+        <option value="{{ major }}">{{ major }}</option>
+        {% endfor %}
+    </select>
+    <input type="submit" value="Submit"/>
+</form>
+
+{% for student in resultList %}
+        <div class="post">
+            <h2>{{ student['firstName'] }} {{ student['lastName'] }}</h2>
+            <ul>
+                <li>Major: {{ student['major'] }}</li>
+                <li>Class: {{ student['class'] }}</li>
+                <li>GPA: {{ student['gpa'] }}</li>
+                <li>Student ID: {{ student['studentID'] }}</li>
+            </ul>
+        </div>
+        {% endfor %}
+{% endblock %}
