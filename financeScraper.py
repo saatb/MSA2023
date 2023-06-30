@@ -24,11 +24,25 @@ def exportData(listOfStocks):
 
 def main():
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36"}
-    symbolsList = ["AJAX.AS", "BVB.DE", "JUVE.MI", "MANU", "CCP.L", "ASR", "SSL.MI", "SLBEN.LS", "OLG.PA", "ADHI"] #ajax, borrussia dortmund, juventus, man united, porto, roma, lazio, benfica, lyon, arsenal
+    stockFile = open('stock_list.csv', 'r')
+    stocksDictionary = {}
+    for line in stockFile:
+        keyValues = line.split(",", 1)
+        if keyValues[0] == "symbol":
+            continue
+        stocksDictionary[keyValues[0]] = keyValues[1].strip("\n")
+        #if len(keyValues) != 2:
+            #stocksDictionary[keyValues[0]] = keyValues[1] + keyValues[2]
+        #else:
+            #stocksDictionary[keyValues[0]] = keyValues[1]
+    stockFile.close()
+            
+    #symbolsList = ["AJAX.AS", "BVB.DE", "JUVE.MI", "MANU", "CCP.L", "SSL.MI", "SLBEN.LS", "OLG.PA", "ADHI"] #ajax, borrussia dortmund, juventus, man united, celtic, lazio, benfica, lyon, arsenal
     listOfStockDictionaries = []
 
-    for symbol in symbolsList:
-        print(f"Requesting data for {symbol} stock")
+    for symbol in stocksDictionary:
+        companyName = stocksDictionary[symbol]
+        print(f"Requesting data for {symbol}: {companyName} stock")
         url = f'https://finance.yahoo.com/quote/{symbol}?p={symbol}&.tsrc=fin-srch'
 
         #request the page
@@ -51,6 +65,6 @@ def main():
             counter += 1
         #append stock dictionary to the list of dictionaries
         listOfStockDictionaries.append(stockDictionary)
-        #time.sleep(2)
+        #time.sleep(1)
     exportData(listOfStockDictionaries)
 main()
