@@ -30,3 +30,9 @@ Day 13 - No class
 Day 14 - No class
 
 Day 15 - Turning the list of student objects into a dictionary for each student, then turning the list of student dictionaries into a json and hosting it on a web server
+
+Day 16 and 17 - Working with flask to make a locally hosted webpage and using HTML to format the page
+
+Day 18 - Pulling data from yahoo! finance API and parsing it
+
+Day 19 - FINAL DAY :( - Finishing up the web scraper and working with the data from it
